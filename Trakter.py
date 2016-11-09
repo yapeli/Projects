@@ -6,7 +6,7 @@ import functions
 from classes import *
 from functions import game_over
 
-#Snake game
+#Trakter game
 #Author: Elisee YAPI
 
 pygame.init()
@@ -105,20 +105,20 @@ def game_intro():
 				quit()
 				
 		gameDisplay.fill(classes.white)
-		message_to_screen( gameDisplay,"Bienvenue a Snake",
+		message_to_screen( gameDisplay,"Bienvenue a Trakter",
                                   classes.green,
                                   -100,
                                   "large", display_width, display_height)
-		message_to_screen( gameDisplay,"L'objectif du jeu est de manger les pomme rouge",
+		message_to_screen( gameDisplay,"L'objectif du jeu est de ramasser les tomates",
                                   classes.black,
                                   -30,"small", display_width, display_height)
-		message_to_screen( gameDisplay,"Plus vous en mangez, plus vous grandissez",
+		message_to_screen( gameDisplay,"Plus vous en ramassez, plus le tracteur s'allonge",
                                   classes.black,
                                   10,"small", display_width, display_height)
 		message_to_screen( gameDisplay,"si vous rentrez dans le mur ou vous meme,vous perdez",
                                   classes.black,
                                   50,"small", display_width, display_height)
-		message_to_screen( gameDisplay,"C : jouer, Q : quitter ou P : pause",
+		message_to_screen( gameDisplay,"C : jouer; Q : quitter; P : pause",
                                   classes.black,
                                   180,"small", display_width, display_height)
 		#intro = False
